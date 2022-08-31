@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/my.css')}}">
+</head>
+<body>
+   <div>
+    <h1 class="display-4">My Profile</h1>
+   </div>
+   
+    <div class="profile-cards">
+
+        <div class="card card-1">
+      
+          <div class="card-description">
+      
+            <h2 class="card-description-title">{{user.name}}</h2>
+      
+            <span class="card-description-profession">{{user.class}}</span>
+            <span class="card-description-profession">{{user.board}}</span>
+      
+            <span class="card-description-profession">{{user.state}} </span>
+             <span class="card-description-profession">{{user.phone_number}} </span>
+              <span class="card-description-profession">{{user.email}}</span>
+          </div>
+      
+          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-image">
+      
+        </div>
+      
+       
+      
+      </div>
+</body>
+</html>
